@@ -16,7 +16,6 @@ jobs:
 
   build:
     needs: read-versions
-    runs-on: ubuntu-latest
     with:
       build-args:
         PYTHON_VERSION=${{ needs.read-versions.outputs.python-version }}
